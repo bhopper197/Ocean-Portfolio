@@ -1,0 +1,229 @@
+/* Import fonts. */
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Maven+Pro&display=swap');
+/* -------  General Styles ------- */
+
+body {
+  margin: 0;
+  font-family: "Kanit";
+  background: #CFE1EB;
+}
+
+header {
+  background-image: url(images-portfolio/portfolio/header2.jpg);
+  background-size: cover;
+  margin-bottom: 50px;
+}
+
+.logo {
+  font-family: "Maven Pro";
+  font-size: 52px;
+  color: whitesmoke;
+  text-align: center;
+  letter-spacing: 9;
+  margin: 0;
+  padding: 20px 0 0 0;
+}
+
+
+/* ---  Set Navigation --- */
+
+header nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+header nav ul {
+  display: flex;
+  flex-direction: row;
+  padding-bottom: 0;
+}
+
+header nav ul li {
+  list-style-type: none;
+}
+
+header nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  padding: 20px;;
+  font-family: "Maven Pro", sans-serif;
+}
+
+header nav ul li a:hover {
+  color: #03303b;
+}
+
+/* Desktop mode */
+@media all and (min-width: 700px) {
+  header {
+    display: flex;
+    justify-content: space-around;
+  }
+
+  .logo {
+    margin: 14px 0 14px 20px;
+    padding-top: 0;
+    font-size: 42px;
+  }
+  
+  header nav {
+    margin-top: 14px;
+  }
+}
+
+/* ---  Primary Groups --- */
+
+main {
+  padding: 40px 0;
+}
+
+section {
+  margin-bottom: 100px;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+section.light-bg {   
+  background: #7CACB1; 
+  padding-top: 90px;
+  padding-bottom: 80px;
+  margin: 90px 0;
+}
+
+footer {
+  background-color: #0A3239;
+  margin-top: 40px;
+  margin-bottom: 0;
+}
+
+/* ---  Typography --- */
+
+h1 {
+  font-size: 23px;
+  font-family: "Maven Pro";
+  font-weight: 400;
+  color: #0A3239;
+}
+
+h2 {
+  font-size: 26px;
+  font-family: "Maven Pro";
+  font-weight: 500;
+  margin: 0 10px;
+}
+
+h3 {
+  font-size: 18px;
+  font-family: "Maven Pro";
+  font-weight: 500;
+}
+
+p {
+ font-family: "Maven Pro";
+ line-height: 1.9em;
+ margin-bottom: 0;
+}
+
+main a {
+	font-weight: 700;
+	text-decoration: double;	
+}
+
+ol li {
+  font-family: "Maven Pro";
+  color: whitesmoke;
+  font-size: 18px;
+}
+
+/* Style link using pseudo styling */
+main  a:link { color: #075f68; }
+main  a:visited { color: #38786a; }
+main  a:hover { color: #ffffff; }
+a:active { color: #074670; }
+
+
+a:hover {
+	text-decoration: double;	
+}
+
+footer p {
+  color: #fff;
+  text-align: start;
+  padding: 20px;
+}
+
+
+main img {
+  width: 100%;
+}
+
+img.image-enhanced {
+  border-radius: 8px;
+}
+
+.group-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.group {
+  display: flex;
+  flex-direction: row;
+}
+
+.item {
+  flex: 1;
+  margin: 10px;
+}
+
+.item-double {
+  flex: 2;
+}
+
+input[type=text]{
+  width: 50%;
+}
+
+/* .border-logo {
+  margin: 0;
+  border-width: 8px;
+  border-style: solid;
+  border-color: black; 
+} */
+
+
+
+/* ---  (Desktop) Groups & Items --- */
+
+@media all and (min-width: 800px) {
+  section {
+    padding: 0 10%;
+  }
+  .group {
+    flex-direction: row;
+  }
+}
+
+
+
+/* Contact Form Design */
+
+form {
+  padding-right: 8px;
+  /* Fixed small sizing issue on the right */
+}
+
+form label {
+  display: block;
+}
+
+form input, 
+form textarea {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+form textarea {
+  height: 160px;
+}
