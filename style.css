@@ -169,7 +169,7 @@ img.image-enhanced {
 
 .group {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
 }
 
 .item {
